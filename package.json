@@ -1,0 +1,25 @@
+{
+  "name": "repo_for_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyryichukyevheniia-sys/repo_for_cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyryichukyevheniia-sys/repo_for_cypress/issues"
+  },
+  "homepage": "https://github.com/kyryichukyevheniia-sys/repo_for_cypress#readme",
+  "devDependencies": {
+    "cypress": "^15.7.1"
+  }
+}
