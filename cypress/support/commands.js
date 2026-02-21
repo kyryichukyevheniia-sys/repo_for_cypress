@@ -1,18 +1,13 @@
 // Custom login command
 Cypress.Commands.add("login", (email, password) => {
-  cy.visit("https://qauto.forstudy.space/", {
-    auth: {
-      username: "guest",
-      password: "welcome2qauto",
-    },
-  });
-
-  cy.contains("Sign In").click();
+  cy.get("button").contains("Sign In").click();
 
   cy.get("#signinEmail").type(email);
   cy.get("#signinPassword").type(password, { sensitive: true });
 
-  cy.contains("Login").click();
+  cy.get("button").contains("Login").click();
+
+  cy.contains("My profile").should("be.visible");
 });
 
 // Overwrite type to hide sensitive data (passwords)
