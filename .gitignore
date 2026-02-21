@@ -16,6 +16,9 @@ cypress/videos/
 cypress/screenshots/
 cypress/downloads/
 cypress/results/
+cypress/videos
+cypress/screenshots
+cypress/reports
 
 # Cypress cache
 .cypress/
